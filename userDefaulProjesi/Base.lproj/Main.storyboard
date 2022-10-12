@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="userDefaulProjesi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notunuzu Yazınız." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYk-Ad-Aio">
+                                <rect key="frame" x="65" y="85" width="284" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ne zaman yapılmalı?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-eC-802">
+                                <rect key="frame" x="65" y="140" width="284" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-6E-OKW">
+                                <rect key="frame" x="65" y="227" width="69" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet"/>
+                                <connections>
+                                    <action selector="kayıtTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CN4-h2-nd2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vm-R5-VFB">
+                                <rect key="frame" x="296" y="227" width="40" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sil"/>
+                                <connections>
+                                    <action selector="silTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ua-mp-GlQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yapılacak işler:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2X-NW-kDS">
+                                <rect key="frame" x="49" y="314" width="316" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="nr1-Wh-WYc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yapılacak Zaman:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lq-E0-2IK">
+                                <rect key="frame" x="49" y="366" width="316" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="cba-K1-HMZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f2X-NW-kDS" firstAttribute="leading" secondItem="9lq-E0-2IK" secondAttribute="leading" id="1sb-38-dYi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3vm-R5-VFB" secondAttribute="trailing" constant="78" id="2T0-KQ-vkt"/>
+                            <constraint firstItem="ebY-eC-802" firstAttribute="top" secondItem="tYk-Ad-Aio" secondAttribute="bottom" constant="21" id="2p3-Q5-TuT"/>
+                            <constraint firstItem="tYk-Ad-Aio" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bhf-Tz-PEU"/>
+                            <constraint firstItem="tYk-Ad-Aio" firstAttribute="leading" secondItem="ebY-eC-802" secondAttribute="leading" id="GwH-x0-pE5"/>
+                            <constraint firstItem="9lq-E0-2IK" firstAttribute="top" secondItem="f2X-NW-kDS" secondAttribute="bottom" constant="27" id="KcS-aZ-dGR"/>
+                            <constraint firstItem="ebY-eC-802" firstAttribute="leading" secondItem="3GO-6E-OKW" secondAttribute="leading" id="ROD-RY-wth"/>
+                            <constraint firstItem="3GO-6E-OKW" firstAttribute="baseline" secondItem="3vm-R5-VFB" secondAttribute="baseline" id="RSE-xo-ZlH"/>
+                            <constraint firstItem="f2X-NW-kDS" firstAttribute="trailing" secondItem="9lq-E0-2IK" secondAttribute="trailing" id="SSx-j6-Y7i"/>
+                            <constraint firstItem="tYk-Ad-Aio" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="Y78-Z0-Pxm"/>
+                            <constraint firstItem="ebY-eC-802" firstAttribute="centerX" secondItem="f2X-NW-kDS" secondAttribute="centerX" id="azd-Ki-yln"/>
+                            <constraint firstItem="tYk-Ad-Aio" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="c5w-Zy-WsR"/>
+                            <constraint firstItem="3GO-6E-OKW" firstAttribute="top" secondItem="ebY-eC-802" secondAttribute="bottom" constant="53" id="ezy-3j-Sb3"/>
+                            <constraint firstItem="f2X-NW-kDS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="lpP-jG-87z"/>
+                            <constraint firstItem="f2X-NW-kDS" firstAttribute="top" secondItem="3GO-6E-OKW" secondAttribute="bottom" constant="56" id="nH3-Ck-u2W"/>
+                            <constraint firstItem="tYk-Ad-Aio" firstAttribute="trailing" secondItem="ebY-eC-802" secondAttribute="trailing" id="rZK-P7-vws"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="notLabal" destination="f2X-NW-kDS" id="Hpa-HZ-gVY"/>
+                        <outlet property="notTextField" destination="tYk-Ad-Aio" id="hGS-6H-tw0"/>
+                        <outlet property="zamanLabel" destination="9lq-E0-2IK" id="AV5-Vg-SLX"/>
+                        <outlet property="zamanTextFild" destination="ebY-eC-802" id="2hi-5X-HY4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
